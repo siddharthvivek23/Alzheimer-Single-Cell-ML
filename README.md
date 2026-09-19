@@ -1,28 +1,76 @@
-# Single-Cell RNA-seq Analysis
+# Alzheimer's Transcriptomic Analysis
 
-This folder contains the single-nucleus RNA-seq workflow used to analyze cell-type-specific changes associated with Alzheimer's disease.
+Computational analysis of Alzheimer's disease using bulk RNA-seq, single-cell RNA-seq, alternative splicing analysis, and machine learning.
 
-## Methods
+Research Provenance
 
-- Quality control and preprocessing
-- Normalization and log transformation
-- Highly variable gene selection
-- PCA-based dimensionality reduction
-- Neighbor graph construction and UMAP visualization
-- Cell-type-specific analysis
-- APOE and TREM2 expression analysis
-- Cellular composition analysis across pathology groups
+This repository contains work from two distinct research contexts.
 
-## Tools
+UAlbany High School Bioinformatics Research Program
 
+The bulk RNA-seq and alternative-splicing analyses were completed as part of the University at Albany High School Bioinformatics Research Program. This work represents formal research experience rather than independent research conducted outside the program.
+
+Independent Research
+
+The single-cell RNA-seq and machine-learning analyses were conducted independently using publicly available Alzheimer's disease transcriptomic data. These analyses, including the computational methods, modeling, figures, and biological interpretation, were developed independently.
+
+## Project Overview
+
+This project investigates molecular changes associated with Alzheimer's disease through transcriptomic analysis across multiple biological scales.
+
+The analysis includes:
+
+- Bulk RNA-seq differential gene expression analysis
+- Alternative splicing analysis
+- Single-cell RNA-seq analysis
+- Machine learning classification of Alzheimer's pathology patterns
+- Gene pathway interpretation
+
+## Methods and Tools
+
+Bulk RNA-seq
+- STAR alignment
+- DESeq2 differential expression analysis
+- rMATS alternative splicing analysis
+- maser splicing visualization
+
+Single-cell RNA-seq
 - Python
 - Scanpy
 - AnnData
 - Pandas
 - Matplotlib
+- PCA-based dimensionality reduction
+- UMAP visualization
+- Cell-type analysis
+- APOE and TREM2 expression analysis
 
-## Dataset
+Machine Learning
+- Python
+- scikit-learn
+- Pandas
+- Logistic Regression classification
+- Feature importance analysis
+- Model evaluation using confusion matrix
 
-Single-nucleus RNA-seq data obtained from NCBI GEO:
+## Data Sources
+
+Bulk RNA-seq data were provided through the University at Albany bioinformatics program and included Alzheimer's disease and control brain tissue samples.
+
+Single-cell RNA-seq data were obtained from the publicly available NCBI GEO database:
 
 GSE243292
+
+## Reproducibility
+
+Analysis scripts, command histories, and key output files are included in this repository to document the computational workflow.
+
+## Research Paper
+
+The complete research portfolio PDF is available below:
+
+[View Research Paper PDF](https://github.com/siddharthvivek23/Alzheimer-Transcriptomic-Analysis/blob/main/Siddharth%20Vivek%20Alzheimers%20Transcriptomics%20Research%20Portfolio%20Final.pdf)
+
+## Author
+
+Siddharth Vivek
