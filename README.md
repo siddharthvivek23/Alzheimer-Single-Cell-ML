@@ -1,75 +1,70 @@
-# Alzheimer's Transcriptomic Analysis
+# Alzheimer's Single-Cell and Machine Learning Analysis
 
-Computational analysis of Alzheimer's disease using bulk RNA-seq, single-cell RNA-seq, alternative splicing analysis, and machine learning.
-
-Research Provenance
-
-This repository contains work from two distinct research contexts.
-
-UAlbany High School Bioinformatics Research Program
-
-The bulk RNA-seq and alternative-splicing analyses were completed as part of the University at Albany High School Bioinformatics Research Program. This work represents formal research experience rather than independent research conducted outside the program.
-
-Independent Research
-
-The single-cell RNA-seq and machine-learning analyses were conducted independently using publicly available Alzheimer's disease transcriptomic data. These analyses, including the computational methods, modeling, figures, and biological interpretation, were developed independently.
+Independent computational analysis of Alzheimer's disease using single-nucleus RNA-seq data and machine learning.
 
 ## Project Overview
 
-This project investigates molecular changes associated with Alzheimer's disease through transcriptomic analysis across multiple biological scales.
+This project investigates cell-type-specific molecular patterns associated with Alzheimer's disease using publicly available single-nucleus RNA-seq data.
 
-The analysis includes:
+The analysis combines exploratory single-cell analysis with machine learning to examine whether transcriptomic features can distinguish Alzheimer's pathology groups and identify predictive molecular signatures.
 
-- Bulk RNA-seq differential gene expression analysis
-- Alternative splicing analysis
-- Single-cell RNA-seq analysis
-- Machine learning classification of Alzheimer's pathology patterns
-- Gene pathway interpretation
+## Dataset
 
-## Methods and Tools
+Single-nucleus RNA-seq data were obtained from the NCBI Gene Expression Omnibus (GEO):
 
-Bulk RNA-seq
-- STAR alignment
-- DESeq2 differential expression analysis
-- rMATS alternative splicing analysis
-- maser splicing visualization
+**GSE243292**
 
-Single-cell RNA-seq
-- Python
-- Scanpy
-- AnnData
-- Pandas
-- Matplotlib
-- PCA-based dimensionality reduction
-- UMAP visualization
-- Cell-type analysis
-- APOE and TREM2 expression analysis
+## Single-Cell RNA-seq Analysis
 
-Machine Learning
-- Python
-- scikit-learn
-- Pandas
-- Logistic Regression classification
-- Feature importance analysis
-- Model evaluation using confusion matrix
+The single-cell workflow includes:
 
-## Data Sources
+* Quality control and filtering
+* Normalization and log transformation
+* Highly variable gene selection
+* PCA and UMAP dimensionality reduction
+* Cell-type-specific analysis
+* APOE and TREM2 expression analysis
+* Cellular composition analysis across pathology groups
 
-Bulk RNA-seq data were provided through the University at Albany bioinformatics program and included Alzheimer's disease and control brain tissue samples.
+### Tools
 
-Single-cell RNA-seq data were obtained from the publicly available NCBI GEO database:
+* Python
+* Scanpy
+* AnnData
+* Pandas
+* Matplotlib
 
-GSE243292
+## Machine Learning Analysis
 
-## Reproducibility
+A logistic regression model was used to investigate whether transcriptomic features could classify Alzheimer's pathology groups.
 
-Analysis scripts, command histories, and key output files are included in this repository to document the computational workflow.
+The workflow includes:
 
-## Research Paper
+* Highly variable gene selection
+* Feature extraction from single-cell RNA-seq data
+* Logistic regression classification
+* Train/test model evaluation
+* Confusion matrix analysis
+* Gene feature-importance analysis
+* Identification of predictive genes
 
-The complete research portfolio PDF is available below:
+### Tools
 
-[View Research Paper PDF](https://github.com/siddharthvivek23/Alzheimer-Transcriptomic-Analysis/blob/main/Siddharth%20Vivek%20Alzheimers%20Transcriptomics%20Research%20Portfolio%20Final.pdf)
+* Python
+* scikit-learn
+* Pandas
+* Scanpy
+* AnnData
+* Joblib
+
+## Repository Structure
+
+* `Single_Cell_RNAseq/` — Single-nucleus RNA-seq preprocessing, visualization, cell-type analysis, and pathology-associated analysis
+* `Machine_Learning/` — Logistic regression classification, model evaluation, and predictive gene analysis
+
+## Research Focus
+
+The overall goal is to connect single-cell transcriptomic patterns with machine learning-based prediction of Alzheimer's pathology, with particular attention to cell-type-specific molecular signatures.
 
 ## Author
 
