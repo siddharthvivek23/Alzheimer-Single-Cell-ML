@@ -140,6 +140,29 @@ Sample-level machine-learning models showed limited generalization across biolog
 
 Overall, the project emphasizes **biologically rigorous validation rather than optimizing for a high predictive accuracy value**.
 
+## Reproducibility
+
+Install the required Python packages with:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the sample-level machine-learning analysis with:
+
+```bash
+python Analysis/single_sample_validation.py --data "PATH_TO_GSE243292_ADsnRNAseq_GEO_data.h5ad"
+```
+
+Run the cell-type composition analysis with:
+
+```bash
+python Analysis/single_cell_composition.py --data "PATH_TO_GSE243292_ADsnRNAseq_GEO_data.h5ad"
+```
+
+The scripts generate the corresponding result files in the `Analysis/` directory.
+
+
 ## Author
 
 **Siddharth Vivek**
