@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large/local research data
+*.h5ad
+*.pkl
+
+# Local analysis outputs
+*.log
