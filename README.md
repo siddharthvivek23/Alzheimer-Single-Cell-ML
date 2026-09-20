@@ -163,6 +163,26 @@ python Analysis/single_cell_composition.py --data "PATH_TO_GSE243292_ADsnRNAseq_
 The scripts generate the corresponding result files in the `Analysis/` directory.
 
 
+## Key Results
+
+### Cell-Type Composition
+
+Sample-level cell-type composition varied substantially across Alzheimer's pathology groups, demonstrating heterogeneity across biological samples.
+
+![Cell-type composition across samples](Analysis/cell_type_composition_by_sample.png)
+
+### Inhibitory Neuron Association
+
+Inhibitory-neuron abundance showed the strongest exploratory association with ordinal pathology state (Spearman rho = ?0.584, unadjusted p = 0.022), but the association did not remain significant after multiple-testing correction.
+
+![Inhibitory neuron pathology association](Analysis/inhibitory_neuron_pathology.png)
+
+### Sample-Level Machine Learning
+
+Leave-one-sample-out validation showed limited generalization across biological samples. Both A? samples were classified as A+, despite an overall accuracy of 86.7%, which matched the majority-class baseline.
+
+![Sample-level LOSO confusion matrix](Analysis/sample_level_LOSO_confusion_matrix.png)
+
 ## Author
 
 **Siddharth Vivek**
